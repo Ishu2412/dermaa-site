@@ -18,13 +18,24 @@
 
 html { scroll-behavior: smooth; }
 
+html, body {
+  /* No layout may ever widen the canvas on a phone — a single overflowing
+     element makes mobile browsers zoom out to a "desktop" view. */
+  overflow-x: clip;
+  max-width: 100%;
+}
+
 body {
   font-family: 'DM Sans', system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
+
+img, svg { max-width: 100%; height: auto; }
 
 h1, h2, h3.serif {
   font-family: 'Lora', Georgia, serif;
@@ -190,4 +201,31 @@ footer { padding: 36px 0 48px; }
   .phone { max-width: 240px; }
   .nav-links a:not(.btn-outline) { display: none; }
   .download-band { justify-content: center; text-align: center; }
+}
+
+/* Phones */
+@media (max-width: 560px) {
+  .wrap { padding: 0 18px; }
+  section { padding: 44px 0; }
+  .hero { padding: 40px 0 36px; }
+  .hero h1 { font-size: 2.1rem; }
+  .hero p.lead { font-size: 1rem; }
+  .hero-cta { flex-direction: column; gap: 16px; }
+  .hero-cta .btn { width: 100%; justify-content: center; }
+  .section-head { margin-bottom: 28px; }
+  .features { grid-template-columns: 1fr; gap: 14px; }
+  .feature { padding: 20px; }
+  .steps { grid-template-columns: 1fr; gap: 8px; }
+  .step { padding: 12px; }
+  .shots-row { gap: 20px; }
+  .shot-callout { max-width: 100%; }
+  .download-band {
+    flex-direction: column; align-items: center;
+    padding: 32px 22px; gap: 24px; border-radius: 22px;
+  }
+  .download-actions { flex-direction: column; gap: 16px; }
+  .footer-inner { flex-direction: column; text-align: center; gap: 10px; }
+  .footer-links { margin-left: 0; }
+  .nav-inner { height: 58px; gap: 12px; }
+  .brand { font-size: 1rem; }
 }
