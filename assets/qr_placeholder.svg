@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 84" width="84" height="84">
+  <!-- Decorative stand-in until the real Play Store QR exists.
+       Swap this file (or the <img> src) for the real QR at launch. -->
+  <rect width="84" height="84" rx="8" fill="#FBF8F4"/>
+  <g fill="#2D3B28">
+    <!-- finder squares -->
+    <path d="M8 8h22v22H8zm4 4v14h14V12z"/>
+    <path d="M54 8h22v22H54zm4 4v14h14V12z"/>
+    <path d="M8 54h22v22H8zm4 4v14h14V58z"/>
+    <rect x="14" y="14" width="10" height="10"/>
+    <rect x="60" y="14" width="10" height="10"/>
+    <rect x="14" y="60" width="10" height="10"/>
+    <!-- scattered modules -->
+    <rect x="36" y="10" width="6" height="6"/>
+    <rect x="44" y="18" width="6" height="6"/>
+    <rect x="36" y="26" width="6" height="6"/>
+    <rect x="10" y="36" width="6" height="6"/>
+    <rect x="22" y="42" width="6" height="6"/>
+    <rect x="34" y="38" width="6" height="6"/>
+    <rect x="46" y="44" width="6" height="6"/>
+    <rect x="58" y="36" width="6" height="6"/>
+    <rect x="70" y="42" width="6" height="6"/>
+    <rect x="38" y="56" width="6" height="6"/>
+    <rect x="48" y="64" width="6" height="6"/>
+    <rect x="58" y="56" width="6" height="6"/>
+    <rect x="68" y="66" width="6" height="6"/>
+    <rect x="38" y="70" width="6" height="6"/>
+  </g>
+  <!-- sage leaf center chip -->
+  <rect x="34" y="34" width="16" height="16" rx="4" fill="#7A9B68"/>
+  <path d="M42 38c-2.6 1.6-3.4 4.6-2.2 7 .4-2.4 1.4-4.4 3.4-5.8-1 2-1.8 4.2-1.6 6.4 2.6-.6 4.4-3 4.4-5.8 0-.8-.2-1.6-.4-2.2-1.2.2-2.4.4-3.6.4z" fill="#FBF8F4"/>
+</svg>
