@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — Dermaa</title>
-  <meta name="description" content="How Dermaa collects, uses, and protects your data." />
+  <meta name="description" content="How Dermaa collects, uses, stores, and deletes your data — including photos, health-related logs, and AI processing." />
   <link rel="icon" type="image/png" href="assets/app_icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:ital,wght@1,500;1,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 </head>
 <body>
   <header class="nav">
@@ -18,6 +18,7 @@
       <nav class="nav-links">
         <a href="index.html#features">Features</a>
         <a href="index.html#how">How it works</a>
+        <a href="delete-account.html">Delete data</a>
         <a class="btn-outline" href="index.html#download">Get the app</a>
       </nav>
     </div>
@@ -25,69 +26,159 @@
 
   <main class="doc">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 11 July 2026</p>
+    <p class="updated">Last updated: 26 August 2026</p>
 
-    <p>Dermaa ("we", "our") is a skincare tracking app. This policy explains what
-    data the app collects, why, and the choices you have. The short version:
-    your data is used only to run the features you see in the app — it is never
-    sold or shared for advertising.</p>
+    <p>Dermaa is a skincare tracking app. This policy explains what the app
+    collects, why it collects it, who it is shared with, how long it is kept,
+    and how you can delete it.</p>
 
-    <h2>What we collect</h2>
+    <p>The short version: your data is used only to run the features you see in
+    the app. It is never sold, never shared with advertisers, and never used to
+    train AI models. Dermaa contains no advertising, no analytics SDK, and no
+    third-party tracking of any kind.</p>
+
+    <h2>Who we are</h2>
+    <p>Dermaa is an independent app published by Shrayash Shukla. For anything
+    in this policy, including data access and deletion requests, contact
+    <a href="mailto:reckad007@gmail.com">reckad007@gmail.com</a>.</p>
+
+    <h2>What we collect, and why</h2>
     <ul>
-      <li><strong>Account details</strong> — your email address and password
-      (stored as a secure hash), used to sign you in.</li>
-      <li><strong>Skin photos</strong> — selfies you choose to take for skin
-      analysis. Photos are uploaded to secure cloud storage and analyzed by an
-      AI model through our own server. We never use your photos for anything
-      other than producing your analysis, and they are never sold or used to
-      train models.</li>
-      <li><strong>Skin & lifestyle profile</strong> — the answers you give at
-      onboarding (skin type, concerns, diet, sleep, allergies, budget), used to
-      personalize routines, analysis, and recommendations.</li>
-      <li><strong>Daily logs</strong> — check-ins (mood, symptoms, triggers),
-      routine completion, meals and meal photos, water and sleep entries. Used
-      to build your dashboard, trends, and personalized AI guidance.</li>
-      <li><strong>Coach conversations</strong> — messages you exchange with the
-      AI coach, stored so the conversation continues across sessions.</li>
-      <li><strong>App version & basic diagnostics</strong> — which app version
-      you run, so we can support you and fix bugs.</li>
+      <li><strong>Account details</strong> — your email address and a password
+      stored only as a secure hash. Used to create your account and sign you
+      in. We never see your password.</li>
+
+      <li><strong>Photos you choose to take</strong> — face photos for skin
+      analysis, meal photos for nutrition analysis, and an optional profile
+      picture. Used only to produce your own results and to show you your own
+      history. Photos are stored in access-controlled cloud storage tied to
+      your account.</li>
+
+      <li><strong>Skin and lifestyle profile</strong> — the answers you give
+      during onboarding and can edit later: skin type, skin tone, concerns,
+      sensitivities, allergies, goals, environment, diet, budget, age and
+      gender. Used to personalise your routine, your analyses, and the coach's
+      answers.</li>
+
+      <li><strong>Health-related daily logs</strong> — check-ins (mood,
+      symptoms, triggers, notes), skin scores, routine completion, meals, water
+      intake and sleep. This is the core of the product: it builds your
+      dashboard, your trends, and the context the AI coach uses.</li>
+
+      <li><strong>Coach conversations</strong> — the messages you exchange with
+      the AI coach, kept so a conversation continues across sessions and so you
+      can search your own history.</li>
+
+      <li><strong>Feedback you submit</strong> — the rating, category and
+      description you send through the in-app feedback form.</li>
+
+      <li><strong>App version and platform</strong> — which build of the app
+      you are running, so we can reproduce bugs and support you.</li>
     </ul>
 
-    <h2>How AI features work</h2>
-    <p>Skin analysis, meal analysis, the coach, and care-plan tips are produced
-    by an AI model. Your photo or relevant data is sent from our server to the
-    AI provider strictly to generate your result, then the result is stored in
-    your account. AI output is general guidance — it is not medical advice, and
-    it never replaces a dermatologist.</p>
+    <p>We do not collect your location, your contacts, your device identifiers
+    for advertising, or your browsing activity. The app requests no location
+    permission at all.</p>
 
-    <h2>Where your data lives</h2>
-    <p>Data is stored with Supabase (our backend provider) with row-level
-    security: every record is tied to your account, and only you can read your
-    own data through the app. AI requests are made from our server — API keys
-    and processing never happen on your device.</p>
-
-    <h2>Subscriptions</h2>
-    <p>Paid subscriptions are processed by Google Play. We use RevenueCat to
-    manage subscription state. We never see or store your payment card details;
-    we only receive confirmation that a subscription is active.</p>
-
-    <h2>What we never do</h2>
+    <h2>Device permissions</h2>
     <ul>
-      <li>Sell your data or share it with advertisers.</li>
-      <li>Use your photos for anything except your own analysis.</li>
-      <li>Access your data beyond what operating the service requires.</li>
+      <li><strong>Camera and photos</strong> — only when you choose to take or
+      pick a photo for a skin scan, a meal scan, or your profile picture.</li>
+      <li><strong>Notifications</strong> — for your routine and check-in
+      reminders. These are scheduled on your device; no reminder content is
+      sent through a push server.</li>
+      <li><strong>Alarms and battery exemption</strong> — used only so
+      reminders fire at the time you set, even when the app is closed.</li>
     </ul>
+    <p>Every one of these is optional. Declining them disables the related
+    feature and nothing else.</p>
 
-    <h2>Your choices</h2>
+    <h2>How the AI features work</h2>
+    <p>Skin analysis, meal analysis, routine generation and the coach are
+    produced by OpenAI models. When you use one of these features, the relevant
+    data — your photo, or a summary of your recent logs and profile — is sent
+    from our server to OpenAI purely to generate that one result, which is then
+    stored in your account.</p>
+    <p>These requests are made server-side. API keys are never present in the
+    app, and your data does not pass through any AI provider from your device
+    directly. Under OpenAI's API terms, data sent through the API is
+    <strong>not</strong> used to train their models.</p>
+    <p>AI output is general wellness guidance. It is not a medical diagnosis and
+    does not replace a dermatologist or other qualified professional. Never
+    disregard professional medical advice because of something the app said.</p>
+
+    <h2>Who your data is shared with</h2>
+    <p>We do not sell data and we do not share it for advertising. Data is
+    shared only with the service providers needed to run the app:</p>
     <ul>
-      <li>You can use the app's tracking features without ever taking a photo.</li>
-      <li>You can edit or clear your profile details in the app at any time.</li>
-      <li>You can request deletion of your account and all associated data by
-      contacting us — we will remove it within 30 days.</li>
+      <li><strong>Supabase</strong> — database, authentication and file storage.
+      This is where your account and all your logs live.</li>
+      <li><strong>OpenAI</strong> — processes the specific content of an AI
+      request, as described above.</li>
+      <li><strong>RevenueCat</strong> and <strong>Google Play Billing</strong> —
+      handle subscriptions. We never receive or store your card details; we only
+      learn whether a subscription is active.</li>
     </ul>
+    <p>We may also disclose data if legally required to do so, or to protect the
+    rights and safety of our users.</p>
+
+    <h2>Where your data is stored</h2>
+    <p>Your data is stored on Supabase infrastructure in the Asia-Pacific
+    (Seoul) region. AI processing takes place on OpenAI infrastructure, which
+    may be located in the United States. By using the app you understand that
+    your data may be processed outside your country of residence.</p>
+
+    <h2>How your data is protected</h2>
+    <p>All traffic between the app and our servers is encrypted in transit.
+    Every table is protected by row-level security, meaning each record is bound
+    to the account that created it and cannot be read by another user. Photos
+    are held in access-controlled storage. Administrative access is limited to
+    what operating and supporting the service requires.</p>
+    <p>No system is perfectly secure, and we cannot guarantee absolute security.
+    If a breach ever affects your data, we will notify you.</p>
+
+    <h2>How long we keep it</h2>
+    <p>Your data is kept for as long as your account exists, because the product
+    is a longitudinal record — trends and progress comparisons depend on old
+    entries remaining available. You can delete individual items (photos,
+    check-ins, conversations) inside the app at any time, and deleting your
+    account removes everything.</p>
+
+    <h2>Deleting your data</h2>
+    <p>You can delete your entire account and all associated data from inside
+    the app: <strong>Profile → Delete account</strong>. This is immediate and
+    permanent. It removes your profile, all check-ins and skin analyses, your
+    routine and logs, your diet records, your coach conversations, and every
+    photo you have uploaded.</p>
+    <p>If you can no longer access the app, email
+    <a href="mailto:reckad007@gmail.com">reckad007@gmail.com</a> from the
+    address you registered with and we will delete your account within 30 days.
+    Full instructions are on our
+    <a href="delete-account.html">data deletion page</a>.</p>
+    <p>Deletion is not reversible and we do not retain a backup copy of deleted
+    accounts for recovery.</p>
+
+    <h2>Your rights</h2>
+    <p>Depending on where you live, you may have the right to access, correct,
+    export, or delete your personal data, and to object to or restrict its
+    processing. Most of this is available directly in the app — your profile is
+    editable, your history is visible, and deletion is one screen away. For
+    anything else, email us and we will respond within 30 days.</p>
+
+    <h2>Children</h2>
+    <p>Dermaa is not intended for anyone under 18, and we do not knowingly
+    collect data from children. If you believe a child has created an account,
+    contact us and we will remove it.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes materially, we will update the date at the top of
+    this page and, where the change affects how your data is used, notify you in
+    the app. Continuing to use Dermaa after a change means you accept the
+    updated policy.</p>
 
     <h2>Contact</h2>
-    <p>Questions or deletion requests: <a href="mailto:reckad007@gmail.com">reckad007@gmail.com</a></p>
+    <p>Questions, requests, or complaints:
+    <a href="mailto:reckad007@gmail.com">reckad007@gmail.com</a></p>
   </main>
 
   <footer>
@@ -96,6 +187,7 @@
       <span>© 2026 Dermaa</span>
       <div class="footer-links">
         <a href="privacy.html">Privacy Policy</a>
+        <a href="delete-account.html">Delete data</a>
       </div>
     </div>
   </footer>
