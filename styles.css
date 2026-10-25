@@ -127,6 +127,11 @@ section { padding: 64px 0; }
 .feature h3 { font-size: 1.05rem; color: var(--forest); margin-bottom: 6px; font-weight: 700; }
 .feature p { font-size: 0.93rem; color: var(--text-soft); }
 
+.features-note {
+  text-align: center; color: var(--text-soft); font-size: 0.9rem;
+  margin-top: 26px;
+}
+
 /* How it works */
 .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
 .step { text-align: center; padding: 18px; }
@@ -156,6 +161,25 @@ section { padding: 64px 0; }
 }
 .shot-callout h3 { color: var(--forest); font-size: 1.02rem; margin-bottom: 6px; }
 .shot-callout p { font-size: 0.92rem; color: var(--text-soft); }
+
+/* Free & Premium */
+.plans { max-width: 640px; margin: 0 auto; }
+.plans table {
+  width: 100%; border-collapse: separate; border-spacing: 0;
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden;
+  box-shadow: 0px 4px 20px rgba(45, 59, 40, 0.05);
+}
+.plans th, .plans td { padding: 14px 18px; text-align: left; font-size: 0.95rem; }
+.plans thead th {
+  background: var(--surface); color: var(--forest); font-weight: 700;
+  font-size: 0.85rem; letter-spacing: 0.03em;
+}
+.plans thead th:last-child, .plans tbody td:last-child { color: var(--primary-dark); font-weight: 600; }
+.plans tbody th { color: var(--text); font-weight: 500; }
+.plans tbody td { color: var(--text-soft); white-space: nowrap; }
+.plans tbody tr + tr > * { border-top: 1px solid var(--border); }
+.plans-note { text-align: center; color: var(--text-soft); font-size: 0.88rem; margin-top: 16px; }
 
 /* Download band */
 .download-band {
@@ -225,6 +249,7 @@ footer { padding: 36px 0 48px; }
   }
   .download-actions { flex-direction: column; gap: 16px; }
   .footer-inner { flex-direction: column; text-align: center; gap: 10px; }
+  .plans th, .plans td { padding: 12px; font-size: 0.88rem; }
   .footer-links { margin-left: 0; }
   .nav-inner { height: 58px; gap: 12px; }
   .brand { font-size: 1rem; }
