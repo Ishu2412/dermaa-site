@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:ital,wght@1,500;1,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=6" />
+  <link rel="stylesheet" href="styles.css?v=7" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -39,7 +39,7 @@
         <a href="index.html#features">Features</a>
         <a href="index.html#premium">Premium</a>
         <a href="index.html#faq">FAQ</a>
-        <a class="btn-outline" href="index.html#download">Get the app</a>
+        <a class="btn-outline" href="index.html#download" data-track="nav_get_app">Get the app</a>
       </nav>
     </div>
   </header>
@@ -144,8 +144,19 @@
 
     <div class="doc-cta">
       <h2>Start your routine with Dermaa</h2>
-      <p>Coming soon to Google Play.</p>
-      <a class="btn" href="index.html#download">Get the app</a>
+      <p>Coming soon to Google Play. Leave your email and we'll tell you the
+      day it launches.</p>
+      <form class="lead-form" data-lead-form novalidate>
+              <label class="sr-only" for="lead-email-tracker">Email address</label>
+              <div class="lead-row">
+                <input id="lead-email-tracker" type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+                <button type="submit" class="btn" data-track="lead_submit">Notify me at launch</button>
+              </div>
+              <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
+              <p class="lead-status" data-lead-status role="status" aria-live="polite"></p>
+              <p class="lead-fine">One email when Dermaa launches — nothing else.
+              <a href="privacy.html#website">How we use it</a></p>
+            </form>
     </div>
   </main>
 
@@ -160,5 +171,6 @@
       </div>
     </div>
   </footer>
+  <script src="assets/track.js?v=1" defer></script>
 </body>
 </html>

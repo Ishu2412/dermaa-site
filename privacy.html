@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:ital,wght@1,500;1,600&display=swap" rel="stylesheet" />
   <link rel="canonical" href="https://dermaa.app/privacy.html" />
-  <link rel="stylesheet" href="styles.css?v=6" />
+  <link rel="stylesheet" href="styles.css?v=7" />
 </head>
 <body>
   <header class="nav">
@@ -22,14 +22,14 @@
         <a href="index.html#features">Features</a>
         <a href="index.html#how">How it works</a>
         <a href="delete-account.html">Delete data</a>
-        <a class="btn-outline" href="index.html#download">Get the app</a>
+        <a class="btn-outline" href="index.html#download" data-track="nav_get_app">Get the app</a>
       </nav>
     </div>
   </header>
 
   <main class="doc">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 26 August 2026</p>
+    <p class="updated">Last updated: 26 October 2026</p>
 
     <p>Dermaa is a skincare tracking app. This policy explains what the app
     collects, why it collects it, who it is shared with, how long it is kept,
@@ -37,8 +37,10 @@
 
     <p>The short version: your data is used only to run the features you see in
     the app. It is never sold, never shared with advertisers, and never used to
-    train AI models. Dermaa contains no advertising, no analytics SDK, and no
-    third-party tracking of any kind.</p>
+    train AI models. The Dermaa app contains no advertising, no analytics SDK, and
+    no third-party tracking of any kind. This website measures visits with its
+    own first-party analytics, described in <a href="#website">This website</a>
+    below, and also uses no third-party trackers.</p>
 
     <h2>Who we are</h2>
     <p>Dermaa is an independently developed app. For anything in this policy,
@@ -140,6 +142,39 @@
     <p>No system is perfectly secure, and we cannot guarantee absolute security.
     If a breach ever affects your data, we will notify you.</p>
 
+    <h2 id="website">This website (dermaa.app)</h2>
+    <p>This section covers the website only; the app is covered above.</p>
+    <p>To understand how people find and use the site, dermaa.app records
+    visits with its own analytics, stored on our servers. No cookies are
+    set, and nothing is shared with advertisers or analytics companies. For
+    each visit we record:</p>
+    <ul>
+      <li>the pages you view, how long they stay open, how far you scroll,
+      which sections you reach, and which buttons, links and questions you
+      click;</li>
+      <li>where you came from — the referring website and any campaign
+      tags in the link;</li>
+      <li>your device type, operating system and browser, screen width,
+      language, time zone and approximate country;</li>
+      <li>a random visitor ID kept in your browser's storage, so a return visit
+      can be recognised as the same anonymous visitor. It contains nothing
+      about you and is not shared with anyone.</li>
+    </ul>
+    <p>We do not store your IP address. To stop abuse of the sign-up form we
+    keep a one-way hash of it that changes every day and cannot be turned back
+    into the address. If your browser sends <strong>Do Not Track</strong> or
+    <strong>Global Privacy Control</strong>, no visitor ID is stored and your
+    visits are counted without being linked together. You can also clear the
+    ID at any time by clearing this site's data in your browser.</p>
+    <p><strong>Launch sign-ups.</strong> If you leave your email in "Notify me
+    at launch", we use it only to tell you when Dermaa is available, together
+    with how you found the site. We will not send marketing beyond that. Ask
+    us to remove it at any time at
+    <a href="mailto:reckad007@gmail.com">reckad007@gmail.com</a>.</p>
+    <p>Visit records are deleted after about 13 months. Fonts on this site are
+    loaded from Google Fonts, which, like any website you load something from,
+    receives your IP address in order to send the fonts.</p>
+
     <h2>How long we keep it</h2>
     <p>Your data is kept for as long as your account exists, because the product
     is a longitudinal record — trends and progress comparisons depend on old
@@ -195,5 +230,6 @@
       </div>
     </div>
   </footer>
+  <script src="assets/track.js?v=1" defer></script>
 </body>
 </html>
