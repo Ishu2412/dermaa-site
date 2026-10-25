@@ -3,19 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dermaa — Understand your skin, gently</title>
-  <meta name="description" content="Dermaa is a skincare tracking app: a daily check-in with one skin score, AI skin analysis, a morning and evening routine, meal, water and sleep tracking, and Sage, a personal AI skin coach. Coming soon to Google Play." />
-  <meta property="og:title" content="Dermaa — Understand your skin, gently" />
+  <title>Dermaa: AI Skin Analysis &amp; Skincare Routine App</title>
+  <meta name="description" content="Dermaa is an AI skincare app: a daily skin check-in with one skin score, AI skin analysis from a selfie, your morning and evening routine, and Sage, an AI skin coach." />
+  <meta property="og:site_name" content="Dermaa" />
+  <meta property="og:title" content="Dermaa: AI Skin Analysis &amp; Skincare Routine App" />
   <meta property="og:description" content="A daily skin check-in, AI skin analysis, your morning and evening routine, wellness tracking and Sage, your AI skin coach — in one calm app." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dermaa.app/" />
   <meta property="og:image" content="https://dermaa.app/assets/shot_dashboard.png" />
   <link rel="canonical" href="https://dermaa.app/" />
-  <link rel="icon" type="image/png" href="assets/app_icon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://dermaa.app/#website",
+        "name": "Dermaa",
+        "alternateName": ["Dermaa app", "Dermaa skincare"],
+        "url": "https://dermaa.app/"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://dermaa.app/#org",
+        "name": "Dermaa",
+        "url": "https://dermaa.app/",
+        "logo": "https://dermaa.app/assets/app_icon.png",
+        "email": "reckad007@gmail.com"
+      },
+      {
+        "@type": "MobileApplication",
+        "name": "Dermaa",
+        "url": "https://dermaa.app/",
+        "operatingSystem": "Android",
+        "applicationCategory": "HealthApplication",
+        "description": "AI skincare app: a daily skin check-in with one skin score, AI skin analysis from a selfie, a morning and evening skincare routine, meal, water and sleep tracking, and Sage, an AI skin coach.",
+        "image": "https://dermaa.app/assets/shot_dashboard.png",
+        "publisher": { "@id": "https://dermaa.app/#org" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:ital,wght@1,500;1,600;1,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=5" />
 </head>
 <body>
 
@@ -26,6 +63,7 @@
         <a href="#features">Features</a>
         <a href="#how">How it works</a>
         <a href="#premium">Premium</a>
+        <a href="#faq">FAQ</a>
         <a href="privacy.html">Privacy</a>
         <a href="delete-account.html">Delete data</a>
         <a class="btn-outline" href="#download">Get the app</a>
@@ -37,6 +75,7 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
+          <p class="eyebrow">Dermaa · AI skincare app</p>
           <h1>Understand your skin, gently.</h1>
           <p class="lead">
             Dermaa turns a one-minute daily check-in into one honest skin
@@ -188,6 +227,56 @@
           </table>
           <p class="plans-note">Logging a meal by hand never uses a scan. Premium
           is billed through Google Play and can be cancelled there at any time.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Questions, answered</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>What is Dermaa?</summary>
+            <p>Dermaa is a skincare tracking app for Android. You check in once a
+            day, follow a morning and evening routine built for your skin, log
+            meals, water and sleep, and ask Sage, the AI skin coach, anything
+            about your skin. It brings it all together into one skin score and
+            a journal that shows how your skin changes over time.</p>
+          </details>
+          <details>
+            <summary>How does the AI skin analysis work?</summary>
+            <p>Take a selfie and Dermaa's AI maps the concerns it sees on your
+            face, rates skin-quality factors, and suggests probable causes from
+            what you have actually logged — your routine, meals, sleep and
+            triggers. A selfie is always optional: a check-in without one still
+            counts.</p>
+          </details>
+          <details>
+            <summary>Is Dermaa free?</summary>
+            <p>Yes. Check-ins, your routine, the journal, stats and reminders are
+            free and unlimited. A Premium subscription raises the daily limits on
+            the AI features — see <a href="#premium">Free &amp; Premium</a>.</p>
+          </details>
+          <details>
+            <summary>Is Dermaa a medical or dermatology app?</summary>
+            <p>No. Dermaa gives general skincare and wellness guidance. It does
+            not diagnose conditions and does not replace a dermatologist — for
+            anything that worries you, see a qualified professional.</p>
+          </details>
+          <details>
+            <summary>What happens to my photos and data?</summary>
+            <p>They are used only to run the features you see, never sold,
+            never used for advertising and never used to train AI models. You
+            can delete your account and everything in it from inside the app.
+            Read the <a href="privacy.html">privacy policy</a>.</p>
+          </details>
+          <details>
+            <summary>When can I download Dermaa?</summary>
+            <p>Dermaa is coming soon to Google Play. This page will link straight
+            to the Play Store on launch day.</p>
+          </details>
         </div>
       </div>
     </section>
