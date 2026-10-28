@@ -15,6 +15,10 @@
   var ENDPOINT = 'https://ilaxstywqahhbvcjbrzv.supabase.co/functions/v1/site-track';
   var SESSION_IDLE_MS = 30 * 60 * 1000;
 
+  // Browsers driven by automation tools (Selenium, Puppeteer, Playwright —
+  // most scanners and crawlers) say so here. They are not visitors.
+  if (navigator.webdriver === true) return;
+
   var optOut =
     navigator.doNotTrack === '1' ||
     window.doNotTrack === '1' ||
